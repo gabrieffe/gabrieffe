@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriele Ferrelli - Fullstack Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-blue-100 text-gray-900">
+
+    <!-- Header -->
+    <header class="fixed w-full bg-blue-700 text-white shadow-lg z-10">
+        <nav class="container mx-auto p-4 flex justify-between items-center">
+            <div class="text-2xl font-bold">Gabriele Ferrelli</div>
+            <div class="md:hidden relative">
+                <button id="menu-btn" class="text-white focus:outline-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+                <ul id="menu" class="hidden absolute right-0 top-16 bg-blue-700 text-white flex-col space-y-6 p-8 rounded-lg shadow-lg text-xl w-48">
+                    <li><a href="#hero" class="hover:underline block">Home</a></li>
+                    <li><a href="#about" class="hover:underline block">About</a></li>
+                    <li><a href="#skills" class="hover:underline block">Skills</a></li>
+                    <li><a href="#contact" class="hover:underline block">Contact</a></li>
+                </ul>
+            </div>
+            <ul class="hidden md:flex space-x-6 text-lg">
+                <li><a href="#hero" class="hover:underline">Home</a></li>
+                <li><a href="#about" class="hover:underline">About</a></li>
+                <li><a href="#skills" class="hover:underline">Skills</a></li>
+                <li><a href="#contact" class="hover:underline">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="container mx-auto text-center py-20 md:py-40" data-aos="fade-up">
+        <img src="avatar.png" alt="Gabriele Ferrelli Avatar" class="mx-auto mb-4 rounded-full w-32 h-32">
+        <h1 class="text-4xl md:text-6xl font-bold text-blue-700">Gabriele Ferrelli</h1>
+        <p class="text-xl md:text-2xl mt-4">Fullstack Developer</p>
+        <p class="mt-2">Passionate about building web and mobile applications.</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-20" data-aos="fade-up">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">About Me</h2>
+            <p class="text-lg text-center">Gabriele Ferrelli was born on June 26, 1979. He attended a technical institute and has been working in the IT sector ever since. Starting with Quick Basic 4.5, he moved on to PHP3, and now excels in modern frameworks like Node.js and React.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="bg-blue-100 py-20" data-aos="fade-up">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left">
+                    <h3 class="text-xl font-bold mb-2">Python</h3>
+                    <p>Experience in developing backend applications and scripts.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="100">
+                    <h3 class="text-xl font-bold mb-2">React</h3>
+                    <p>Expert in building dynamic and responsive user interfaces.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="200">
+                    <h3 class="text-xl font-bold mb-2">Node.js</h3>
+                    <p>Skilled in developing server-side applications with Node.js and Express.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="300">
+                    <h3 class="text-xl font-bold mb-2">Django</h3>
+                    <p>Proficient in building robust and scalable web applications with Django.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="400">
+                    <h3 class="text-xl font-bold mb-2">PHP</h3>
+                    <p>Experienced in developing dynamic websites and APIs.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="500">
+                    <h3 class="text-xl font-bold mb-2">React Native</h3>
+                    <p>Capable of creating cross-platform mobile applications.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="600">
+                    <h3 class="text-xl font-bold mb-2">Express</h3>
+                    <p>Proficient in building RESTful APIs with Express.js.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="700">
+                    <h3 class="text-xl font-bold mb-2">Flask</h3>
+                    <p>Skilled in developing lightweight web applications with Flask.</p>
+                </div>
+                <div class="bg-white p-6 shadow-lg rounded-lg" data-aos="flip-left" data-aos-delay="800">
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p>Expert in modern JavaScript (ES6+) for frontend and backend development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-20" data-aos="fade-up">
+        <div class="container mx-auto px-4 md:px-0">
+            <h2 class="text-3xl font-bold text-center text-blue-700 mb-8">Contact</h2>
+            <form action="#" method="POST" class="max-w-lg mx-auto">
+                <div class="mb-4">
+                    <label for="name" class="block text-gray-700">Name</label>
+                    <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="email" class="block text-gray-700">Email</label>
+                    <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required>
+                </div>
+                <div class="mb-4">
+                    <label for="message" class="block text-gray-700">Message</label>
+                    <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg" required></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="w-full bg-blue-700 text-white py-2 px-4 rounded-lg">Send</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-700 text-white text-center py-6">
+        <p class="text-lg font-bold">Gabriele Ferrelli</p>
+        <p class="text-md">gabri@usa.com</p>
+    </footer>
+
+    <!-- AOS and JavaScript for Mobile Menu -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        document.getElementById('menu-btn').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+
